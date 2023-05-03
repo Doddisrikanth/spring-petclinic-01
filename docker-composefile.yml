@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  spc1-sri:
+    build: 
+      context: .
+    ports:
+      - target: 8080
+        published: 8082
+        protocol: tcp
+        mode: host
